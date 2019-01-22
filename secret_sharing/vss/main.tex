@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep,topsep=0.03in} % reduce spacing in lists
+\usepackage{microtype}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newenvironment{annotation}{\begin{quotation}\noindent\textit{Annotation:} }{\end{quotation}}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+
+\title{\textbf{Annotated Bibliography \\ on Verifiable Secret Sharing}}
+\author{Chelsea H. Komlo}
+\date{Winter 2019}
+
+\begin{document}
+
+\bibliographystyle{abbrvnat}
+
+\maketitle
+
+\section*{Categorization}
+
+\section*{Annotated References}
+
+\begin{itemize}
+
+\item
+	\bibentry{SAC:NN2005
+	\begin{annotation}
+    Adds the definition of a mobile adversary, where a mobile adversary can
+    move between players over time, controlling an ever-changing subset of the
+    players. Proactive schemes are supposed to mitigate mobile players as
+    refreshing shares mitigates the threat that the adversary will control $4$
+    players at any point of time in an epoch. This requires that the system be
+    set up in such a way that the adversary not have enough time to control $t$
+    or more shares in an epoch.
+
+    Several well-known VSS schemes are broken when considered in the setting of
+    a mobile adversary. For example, Feldman's VSS scheme with a proactive
+    addition is broken (this holds true for Pederson's scheme as well). Other
+    known Unconditionally Secure VSS schemes also fail with a mobile adversary.
+
+    Identifies conditions for security of Proactive VSS, namely that for
+    protocols to be secure against b cheating players, polynomials of $k-1$
+    should be used, and recommend that $b \leq k$. For computationally
+    secure (b, k, n) proactive VSS is secure if and only if the number of
+    cheating players + the threshold number is less than the total number of
+    participants- $b + k \leq n$
+	\end{annotation}
+\end{itemize}
+
+\end{document}
