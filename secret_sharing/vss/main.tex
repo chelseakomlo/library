@@ -51,7 +51,12 @@
     should be used, and recommend that $b \leq k$. For computationally
     secure (b, k, n) proactive VSS is secure if and only if the number of
     cheating players + the threshold number is less than the total number of
-    participants- $b + k \leq n$
+    participants- $b + k \leq n$.
+
+    Thus, when updates are made via a commitment to zero, only $t-2$ shares
+    can be lost per epoch in reality, as if $t-1$ shares are lost in one epoch,
+    an adversary could work backwards from the next epoch and determine the
+    secret.
 	\end{annotation}
 \end{itemize}
 
