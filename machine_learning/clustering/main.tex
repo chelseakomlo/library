@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep,topsep=0.03in} % reduce spacing in lists
+\usepackage{microtype}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newenvironment{annotation}{\begin{quotation}\noindent\textit{Annotation:} }{\end{quotation}}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+
+\title{\textbf{Annotated Bibliography \\ on Clustering}}
+\author{Chelsea H. Komlo}
+\date{Winter 2019}
+
+\begin{document}
+
+\bibliographystyle{abbrvnat}
+
+\maketitle
+
+\section*{Annotated References}
+
+\begin{itemize}
+
+\item
+	\bibentry{TODOCITE
+	\begin{annotation}
+    Discusses statistical aspects of clustering. Introduces the idea that the
+    more sample points that are available, the more reliable the clustering
+    should be.
+
+    Good indicators of whether a statistical data set has been clustered
+    appropriately include convergence proofs and stability considerations.
+    Specifically, 1) the clustering should converge as the more data points are
+    added, which indicates stability. However, it is important to rule out the
+    trivial result and ensure that clustering algorithms select interesting
+    results .Thus, 2) the algorithm should also demonstrate flexibility, which
+    requires sensitivity to sample variations.
+
+    Stability requires that a good clustering algorithm are stable with respect
+    to the clustering process, and would not change much by drawing another
+    sample.
+	\end{annotation}
+\end{itemize}
+
+\end{document}
