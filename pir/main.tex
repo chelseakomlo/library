@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep,topsep=0.03in} % reduce spacing in lists
+\usepackage{microtype}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newenvironment{annotation}{\begin{quotation}\noindent\textit{Annotation:} }{\end{quotation}}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+
+\title{\textbf{Annotated Bibliography \\ on Private Information Retrieval}}
+\author{Chelsea H. Komlo}
+\date{Spring 2019}
+
+\begin{document}
+
+\bibliographystyle{abbrvnat}
+
+\maketitle
+
+\section*{Categorization}
+
+\section*{Annotated References}
+
+\begin{itemize}
+
+\item
+	\bibentryGasarch:2004{
+	\begin{annotation}
+    Private information retrieval is when a user wants to query a database for
+    information but not reveal to the server what information they want to
+    seek. The simplest way to achieve this is for the server to send them
+    \textbf{all} of the information. The question in PIR is how to achieve this
+    goal more efficiently.
+
+    One way to achieve this is by viewing the database as a $\sqrt{n}$ x
+    $\sqrt{n}$ database and using properties of xor. By generating
+    carefully-crafited bit strings and sending both to two separate databases,
+    who xor the entire contents of their database, the user can xor the
+    responses, revealing only the desired index, without reavealing this to the
+    databases (Theorem 3.2).
+	\end{annotation}
+\end{itemize}
+
+\end{document}
