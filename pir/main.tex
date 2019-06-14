@@ -31,7 +31,7 @@
 \begin{itemize}
 
 \item
-	\bibentryGasarch:2004{
+  \bibentry{Gasarch:2004{
 	\begin{annotation}
     Private information retrieval is when a user wants to query a database for
     information but not reveal to the server what information they want to
@@ -45,6 +45,20 @@
     who xor the entire contents of their database, the user can xor the
     responses, revealing only the desired index, without reavealing this to the
     databases (Theorem 3.2).
+	\end{annotation}
+\item
+  \bibentry{Blackburn:2016{
+	\begin{annotation}
+    Presents a PIR scheme that minimizes the download complexity while also
+    minimizing the amount of storage required for servers.
+
+    Examples of real-world PIR systems include Popcorn and Splinter, achieving
+    latencies less than 1.2 seconds for realistic work loads.
+
+    Proving optimal download complexity- when the number of records is greater
+    than 2, the download complexity must be as long as $R+1$, where $R$ is the
+    length of the record. For an $n$-server PIR query, the lowerboad is
+    $\frac{n}{n-1}R$ when $k$ (the number of records) is sufficiently large.
 	\end{annotation}
 \end{itemize}
 
